@@ -1,0 +1,23 @@
+# Local stack: control plane + web UI + PostgreSQL registry.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: apification, POSTGRES_PASSWORD: apification, POSTGRES_DB: apification }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U apification"], interval: 5s, retries: 10 }
+  control-plane:
+    build: { context: ., dockerfile: infrastructure/docker/control-plane.Dockerfile }
+    environment:
+      APF_DATABASE_URL: postgresql+psycopg://apification:apification@postgres:5432/apification
+      APF_CORS_ORIGINS: http://localhost:3000
+    volumes: [apfdata:/data]
+    depends_on: { postgres: { condition: service_healthy } }
+    ports: ["8000:8000"]
+  web:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/web.Dockerfile
+      args: { APF_API_URL: "http://control-plane:8000" }
+    depends_on: [control-plane]
+    ports: ["3000:3000"]
+volumes: { pgdata: {}, apfdata: {} }

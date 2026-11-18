@@ -1,0 +1,13 @@
+# local data (registry, vault key, demo DB, dev tokens) — never commit
+services/control-plane/.data/
+services/control-plane/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+apps/web/node_modules/
+apps/web/.next/
+apps/web/tsconfig.tsbuildinfo
+.env
+.env.local
+.DS_Store
+.run/
