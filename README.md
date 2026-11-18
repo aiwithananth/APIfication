@@ -130,3 +130,22 @@ Key decisions (spec §23/§29) are recorded in `docs/decisions/`.
 | `APF_SEED_DEMO` | `1` | Seed the demo on first start |
 | `APF_EGRESS_ALLOWLIST` | `*` | Hosts that HTTP nodes and model endpoints may call |
 | `APF_API_URL` (web) | `http://127.0.0.1:8000` | Where the UI proxies `/api` and `/gw` |
+
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/81480f65-3ff2-4250-b35e-48e238899946" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/8e71c361-d909-4378-9803-a32846dc6f76" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/68bd71a9-2594-4a19-a7da-c3a96548dd8f" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/b3115764-a6be-49e1-95c7-5c4791ceb951" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/cce6be02-5d58-4522-8d71-1076ba214139" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/0acb5584-f26b-4864-982e-010ba173e305" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/e45dbc1d-33ac-4b8b-9873-49a7ab74bea2" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/54b03617-5657-4102-b5f6-d4cfab09a01c" />
+<img width="1385" height="868" alt="image" src="https://github.com/user-attachments/assets/d1467c67-5cc2-4212-bfa9-4767e41fbe92" />
+
+
+
+
+
+
+
+
+
